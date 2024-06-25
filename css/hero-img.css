@@ -1,0 +1,36 @@
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    background-image: url('../img/coffee-cup.jpg'); /* Ensure the path to your image is correct */
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Adds depth with shadow */
+    filter: brightness(90%) contrast(110%); /* Subtly adjust brightness and contrast for enhanced visibility */
+    overflow: hidden; /* Ensures nothing spills out */
+}
+
+.hero-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, transparent, rgba(0, 0, 0, 0.6) 70%); /* Creates a vignette effect */
+    z-index: 0; /* Ensure it's under the text */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly darker black overlay for better readability */
+    padding: 20px;
+    border-radius: 10px; /* Adds rounded corners for a softer look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Soft shadow for the text box */
+    z-index: 1; /* Ensures text is above the vignette */
+}

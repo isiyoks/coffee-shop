@@ -1,0 +1,175 @@
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.feature-item {
+    width: 30%;
+    padding: 10px;
+    background-color: #F2D0A4;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.featured .card img {
+    width: 100%;  /* Ensures the image takes up the full container width */
+    height: 200px; /* Sets a fixed height for all images */
+    object-fit: cover;  /* Ensures the image covers the area without distortion */
+    object-position: bottom;  /* Centers the image within the container */
+    border-radius: 5px; /* Optional: adds rounded corners to the images */
+}
+
+.intro {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+.intro img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #F2D0A4;
+    color: #5C3A00;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text visibility */
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card {
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-text {
+    padding: 10px;
+    background-color: #F2D0A4;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.about img {
+    width: 50%;
+    height: auto;
+} 
+
+
+
+.about img {
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Smooth transition for transform and filter */
+    width: 100%; /* Full width to fill the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.about:hover img {
+    transform: scale(1.05); /* Slightly enlarges the image */
+    filter: brightness(1.1) contrast(1.2); /* Increases brightness and contrast */
+}
+
+.testimonials blockquote {
+    background-color: #f4f4f4;
+    border-left: 10px solid #8A6552;
+    margin: 20px;
+    padding: 20px;
+}
+
+.blog article {
+    background-color: #f4f4f4;
+    margin: 20px;
+    padding: 20px;
+}
+
+.find-us button {
+    background-color: #8A6552;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.find-us button:hover {
+    background-color: #5C3A00;
+}

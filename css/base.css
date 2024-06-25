@@ -1,1 +1,62 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFF8F0;
+    color: #5C3A00;
+    width: clamp(320px, 100%, 1200px); /* width will never be less than 320px, more than 1200px, and otherwise it's 100% */
+    margin: auto; /* Centers the container */
+    padding: 20px;
+}
 
+
+header {
+    background-color: #F2D0A4;
+    color: #5C3A00;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+main {
+    text-align: center;
+}
+
+footer {
+    width: 100%; /* Ensures the footer spans the full width of the page */
+    padding: 10px 20px; /* Adjust padding to match header */
+    background-color: #FFF; /* Match the header's background color */
+    color: #6C4E09; /* Coffee brown for text to match the navbar */
+    text-align: center; /* Centers the footer text */
+    border-top: 1px solid #ccc; /* Adds a subtle border line like the navbar might have */
+    position: fixed; /* Makes footer stay at the bottom */
+    bottom: 0; /* Aligns the footer at the bottom */
+    left: 0; /* Aligns the footer from the left edge */
+    right: 0; /* Ensures the footer extends to the right edge */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow to lift the footer off the page visually */
+}
+
+input, button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #8A6552;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #5C3A00;
+}
